@@ -1,0 +1,56 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "La contraseña más común del 2023",
+    title: "Contraseñas débiles",
+    company: "Riesgo de seguridad",
+    description:
+      "En 2023, la contraseña -12345- se mantuvo como la más común entre usuarios de Internet. Esta contraseña, a pesar de ser fácil de recordar, es extremadamente débil y puede ser fácilmente descifrada por hackers en cuestión de minutos. Utilizar contraseñas simples y predecibles como esta deja tus cuentas expuestas a ataques y compromete tu seguridad en línea.",
+      link: "https://www.youtube.com/watch?v=uiZmV3S1t00",
+  },
+  {
+    date: "La importancia de la complejidad",
+    title: "Contraseñas complejas",
+    company: "Mayor seguridad",
+    description:
+      "La complejidad de una contraseña se refiere a la combinación de caracteres que contiene. Las contraseñas fuertes incluyen una mezcla de letras mayúsculas y minúsculas, números y caracteres especiales. Por ejemplo, una contraseña como -P@ssw0rd!- es mucho más segura que una simple como -password-. Cuanto más compleja sea tu contraseña, más difícil será para los hackers adivinarla o descifrarla.",
+      link: "https://www.youtube.com/watch?v=zv-wiRg7_lI",
+  },
+  {
+    date: "El riesgo del reuso de contraseñas",
+    title: "Reutilización de contraseñas",
+    company: "Vulnerabilidad de cuentas",
+    description:
+      "Usar la misma contraseña para múltiples cuentas es un hábito peligroso que aumenta tu vulnerabilidad en línea. Si un hacker obtiene acceso a una de tus cuentas y descubre tu contraseña, podrá acceder fácilmente a todas las demás cuentas que utilicen la misma contraseña. Esto incluye no solo tus cuentas personales, sino también tus cuentas bancarias, de correo electrónico y de redes sociales.",
+    link: "https://www.youtube.com/shorts/DVHYY4t7SkY",
+  },
+  {
+    date: "El papel de los administradores de contraseñas",
+    title: "Administradores de contraseñas",
+    company: "Almacenamiento seguro",
+    description:
+      "Los administradores de contraseñas son herramientas diseñadas para generar, almacenar y gestionar contraseñas de forma segura. Estas herramientas pueden crear contraseñas fuertes y únicas para cada cuenta, lo que elimina la necesidad de recordar múltiples contraseñas. Además, almacenan tus contraseñas en una bóveda encriptada, protegida por una contraseña maestra, lo que garantiza la seguridad de tus credenciales en línea.",
+      link: "https://www.youtube.com/watch?v=0hw75afSylk",
+  },
+  {
+    date: "La autenticación de dos factores (2FA)",
+    title: "Autenticación de dos factores",
+    company: "Verificación adicional",
+    description:
+      "La autenticación de dos factores proporciona una capa adicional de seguridad al requerir no solo una contraseña, sino también un segundo método de verificación, como un código enviado a tu teléfono móvil o una huella digital. Esto dificulta enormemente a los hackers el acceso a tus cuentas incluso si conocen tu contraseña. Habilitar la autenticación de dos factores es una forma efectiva de fortalecer la seguridad de tus cuentas en línea y proteger tu información personal.",
+    link: "https://www.youtube.com/watch?v=PISNMBy0d3I",
+  },
+
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
